@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+    /* Font size (inputs): 32px; */
+    font-family: 'Poppins';
+}
+
+body{
+    background: var(--off-white);
+    min-height: 100vh;
+    min-width:  100vw;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-root{
+    width: 70%;
+}
+.fontcol{
+    color: var(--light-grey);
+}
+.fontValid{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 8px;
+    color: var(--light-red);
+}
+.fontValidEm{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 8px;
+    color: var(--light-red);
+}
+div{
+    color: var(--smokey-grey);
+}
+input{
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--off-black);
+    border: .5px solid var(--light-grey);
+    border-radius: 4px;
+    padding: 5px;
+}
+input:focus {
+    border: 1px solid var(--purple); 
+}
+.fontRe{
+    font-size: 32px;
+    color: var(--off-black);
+    font-style: italic;
+}
+span{
+    color: var(--purple);
+    font-size: 40px;
+}
+#banner{
+    padding: 10px;
+    border-radius: 0 20px 0 20px;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #27005D, #9400FF, #AED2FF, #E4F1FF);
+    color:hsl(0, 0%, 100%); 
+}
+#banner:hover{
+    font-size: 16px;
+}
